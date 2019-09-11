@@ -38,7 +38,7 @@ RUN wget https://www.mirrorservice.org/sites/ftp.apache.org/kafka/2.3.0/kafka_2.
     tar -xvf kafka_2.11-2.3.0.tgz && \
   mv kafka_2.11-2.3.0 $KAFKA_HOME
 
-CMD ["/start-kafka.sh"]
+
 
 
 
