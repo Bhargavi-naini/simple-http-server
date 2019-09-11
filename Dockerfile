@@ -40,7 +40,7 @@ RUN wget https://www.mirrorservice.org/sites/ftp.apache.org/kafka/2.3.0/kafka_2.
 
 
 
-
+CMD ["/start-kafka.sh"]
 
 	
 
