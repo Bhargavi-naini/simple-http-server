@@ -8,6 +8,6 @@
 #chmod +x /tmp/rabbitmq/run-rabbitmq-server.sh
 #CMD ["/tmp/rabbitmq/run-rabbitmq-server.sh"]
 
-CMD ["/start-kafka.sh"]
+#CMD ["/start-kafka.sh"]
 
 #CMD["tail -f /dev/null"]
