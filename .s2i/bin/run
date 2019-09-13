@@ -21,13 +21,6 @@ cd  kafka_2.11-2.3.0
 
 ls
 echo "after ls:3"
-cd kafka 
-
-ls 
-echo"after ls:4"
-
-pwd 
-echo "after pwd"
 
 echo "running run scripts "
 
