@@ -12,7 +12,7 @@
 
 ls 
 echo "after ls"
-tar -xvz kafka_2.11-2.3.0.tgz
+unzip  -xvz kafka_2.11-2.3.0.tgz
 pwd 
 echo "after pwd"
 
