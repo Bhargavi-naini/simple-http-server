@@ -1,5 +1,6 @@
 #FROM rabbitmq:3-management
 FROM ubuntu:16.04
+USER root
 
 COPY . /tmp/src
 
@@ -32,12 +33,10 @@ RUN apt-get update && apt-get install -y \
 # install kafka
 RUN wget https://www.mirrorservice.org/sites/ftp.apache.org/kafka/2.3.0/kafka_2.11-2.3.0.tgz && \
     tar -xvf kafka_2.11-2.3.0.tgz && \
-    mv kafka_2.11-2.3.0 $KAFKA_HOME
-
-
-
+    mv kafka_2.11-2.3.0   $KAFKA_HOME
+    
+    
+RUN chmod +x   /tmp/scripts/  
+RUN /tmp/scripts/
 CMD ["/start-kafka.sh"]
-
-#CMD ["/tmp/rabbitmq/run-rabbitmq-server.sh"]
-
 
