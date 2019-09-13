@@ -39,4 +39,5 @@ RUN wget https://www.mirrorservice.org/sites/ftp.apache.org/kafka/2.3.0/kafka_2.
 RUN chmod +x   /tmp/scripts/  
 RUN /tmp/scripts/
 CMD ["/start-kafka.sh"]
+CMD ["/create-topic.sh"]
 
