@@ -13,29 +13,31 @@
 ls 
 echo "after ls:1"
 tar  -xvf kafka_2.11-2.3.0.tgz
+
 ls 
-echo "after ls:1"
+echo "after ls:2"
 
 cd  kafka_2.11-2.3.0
 
 ls
-echo "after ls:1"
+echo "after ls:3"
 cd kafka 
+
+ls 
+echo"after ls:4"
 
 pwd 
 echo "after pwd"
 
-
 echo "running run scripts "
 
 # Create a topic
-kafka/bin/kafka-topics.sh --create \
+/bin/kafka-topics.sh --create \
   --zookeeper localhost:2181 \
   --replication-factor 1 --partitions 13 \
   --topic my-topic
-
-
+  
 #list topics
-kafka/bin/kafka-topics.sh --list \
+/bin/kafka-topics.sh --list \
     --zookeeper localhost:2181
 
