@@ -22,7 +22,7 @@ LABEL io.k8s.description="kafka Server" \
       io.openshift.tags="builder,http"
 
 
-ENV KAFKA_HOME /usr/local/kafka
+ENV KAFKA_HOME /usrexec/local/kafka
 ADD ./start-kafka.sh /scripts/
 
 # install java + others
