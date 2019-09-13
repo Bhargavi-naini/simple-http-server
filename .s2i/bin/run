@@ -9,6 +9,10 @@
 #CMD ["/tmp/rabbitmq/run-rabbitmq-server.sh"]
 
 #CMD ["/start-kafka.sh"]
+ls 
+echo "after ls"
+pwd 
+echo "after pwd"
 echo "running run scripts "
 
 # Create a topic
