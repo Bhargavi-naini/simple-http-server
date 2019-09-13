@@ -29,6 +29,9 @@ ADD ./start-kafka.sh /scripts/
 RUN apt-get update && apt-get install -y \
     wget \
     openjdk-8-jdk
+    
+RUN   wget http://mirrors.estointernet.in/apache/zookeeper/zookeeper-3.4.14/zookeeper-3.4.14.tar.gz && \
+      tar -xvf zookeeper-3.4.14.tar.gz
 
 # install kafka
 RUN wget https://www.mirrorservice.org/sites/ftp.apache.org/kafka/2.3.0/kafka_2.11-2.3.0.tgz && \
