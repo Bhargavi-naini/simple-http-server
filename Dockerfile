@@ -33,7 +33,7 @@ RUN apt-get update && apt-get install -y \
 # install kafka
 RUN wget https://www.mirrorservice.org/sites/ftp.apache.org/kafka/2.3.0/kafka_2.11-2.3.0.tgz && \
     tar -xvf kafka_2.11-2.3.0.tgz && \
-    mv kafka_2.11-2.3.0   $KAFKA_HOME
+#    mv kafka_2.11-2.3.0  $KAFKA_HOME
     
     
 RUN chmod +x   /tmp/scripts/  
