@@ -38,7 +38,10 @@ RUN wget https://www.mirrorservice.org/sites/ftp.apache.org/kafka/2.3.0/kafka_2.
 
 
 CMD  ["/start-kafka.sh"]
-CMD ["/create-topic.sh"]    
+RUN echo"in docker file after starting server !!!!!"
+
+CMD ["/create-topic.sh"] 
+RUN echo "after executing create topic sh"
 RUN chmod +x   /tmp/scripts/  
 RUN /tmp/scripts/
 
