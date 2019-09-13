@@ -1,2 +1,3 @@
-$/bin/kafka-topics.sh --create --topic topic \
---partitions 4 --zookeeper $ZK --replication-factor 2
+
+bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 
+--partitions 1 --topic topic-name
