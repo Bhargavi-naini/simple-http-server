@@ -24,6 +24,8 @@ echo "after ls:3"
 
 echo "running run scripts "
 
+./create-topic.sh 
+
 # Create a topic
 /bin/kafka-topics.sh --create \
   --zookeeper localhost:2181 \
