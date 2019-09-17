@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-USER nobody
+USER 1001
 
 COPY . /tmp/src
 
