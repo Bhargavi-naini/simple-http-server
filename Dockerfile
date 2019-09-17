@@ -1,4 +1,3 @@
-#FROM rabbitmq:3-management
 FROM ubuntu:16.04
 USER root
 
@@ -12,8 +11,6 @@ RUN rm -rf /tmp/src/.git* && \
     chmod -R g+w /tmp/src && \
     rm -rf /tmp/scripts && \
     mv /tmp/src/.s2i/bin /tmp/scripts
-
-#USER 1001
 
 LABEL io.k8s.description="kafka Server" \
       io.k8s.display-name="kafka Server" \
@@ -37,13 +34,3 @@ RUN   wget http://mirrors.estointernet.in/apache/zookeeper/zookeeper-3.4.14/zook
 RUN wget https://www.mirrorservice.org/sites/ftp.apache.org/kafka/2.3.0/kafka_2.11-2.3.0.tgz && \
     tar -xvf kafka_2.11-2.3.0.tgz 
 #    mv kafka_2.11-2.3.0  $KAFKA_HOME
-
-
-#RUN echo "after executing create topic sh"
-#RUN  ["/start-kafka.sh"]
-#CMD ["/create-topic.sh"] 
-#RUN chmod +x   /tmp/scripts/  
-#RUN /tmp/scripts/
-
-
-
